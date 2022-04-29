@@ -115,16 +115,24 @@
                                     </div>
                                     <div class="start-form">
                                         <label for="exampleInputIcon3">준비되셨나요?</label>
-                                        <button type="submit" class="btn btn-block btn-primary">
+                                        <button id="button-start" type="submit" class="btn btn-block btn-primary">
                                             <a href="#" class="font-weight-bold">추첨 시작</a>
                                         </button>
                                     </div>
                                 </form>
+                                <br>
+                                <br>
                                 <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
-                                    <span class="font-weight-normal">
-                                        made by
-                                        <a href="#" class="font-weight-bold">Heonjin, Minwoo, Jaehee</a>
-                                    </span>
+                                    <div class="card bg-primary shadow-soft border-light text-center py-2">
+                                        <div class="card-header p-3">
+                                            <h3 class="text-gray mb-2">당첨된 번호는 ..</h3>
+                                            <span class="d-block">
+                                                <span id="text-selected" class="display-1 font-weight-bold">
+                                                    NONE
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,5 +164,16 @@
     <!-- Neumorphism JS -->
     <script src="./assets/js/neumorphism.js"></script>
     </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
+            <span class="font-weight-normal">
+                made by
+                <a href="#" class="font-weight-bold">Heonjin, Minwoo, Jaehee</a>
+            </span>
+        </div>
+        <br>
+    </footer>
     
     </html>
