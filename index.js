@@ -7,7 +7,7 @@ let hostname = 'localhost'
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 
 var server = app.listen(port, function(){
     console.log(`
